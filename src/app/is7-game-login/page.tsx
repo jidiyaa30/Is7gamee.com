@@ -5,16 +5,16 @@ import TrackedCTALink from "@/components/TrackedCTALink";
 
 
 export const metadata: Metadata = {
-  title: "Is7 Game Login – Access Your Account Securely",
-  description: "Log in to your Is7 Game account. Learn about login methods, biometric authentication, password recovery, and how to keep your Is7 account secure.",
-  keywords: ["Is7 Game login", "Is7 login", "Is7 Game sign in", "Is7 account login", "Is7 Game account access", "Is7 Game login 2026"],
+  title: "Is7 Game Login Security – 2FA, Sessions & Account Protection",
+  description: "Protect your Is7 Game account with two-factor authentication, session management, login audit logs, biometric setup, and suspicious activity alerts. Full security guide.",
+  keywords: ["Is7 Game login security", "Is7 2FA setup", "Is7 account protection", "Is7 Game session management", "Is7 biometric login", "Is7 Game login audit"],
   openGraph: {
-    title: "Is7 Game Login – Access Your Account Securely",
-    description: "Log in to Is7 Game. Multiple login methods, biometric support, and account security tips.",
+    title: "Is7 Game Login Security – 2FA, Sessions & Account Protection",
+    description: "Set up 2FA, manage active sessions, review login history, and protect your Is7 Game account from unauthorized access.",
     url: "https://Is7gamee.com/is7-game-login",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Is7 Game Login" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Is7 Game Login Security" }],
   },
-  twitter: { card: "summary_large_image", title: "Is7 Game Login", description: "Access your Is7 Game account securely.", images: ["/og-image.png"] },
+  twitter: { card: "summary_large_image", title: "Is7 Game Login Security", description: "Full guide to securing your Is7 Game account.", images: ["/og-image.png"] },
   alternates: { canonical: "https://Is7gamee.com/is7-game-login" },
 };
 
@@ -40,10 +40,10 @@ export default function Is7GameLoginPage() {
             <span className="text-gray-800 font-medium">Is7 Game Login</span>
           </nav>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Is7 Game Login</span> – Access Your Account
+            <span className="gradient-text">Is7 Game Login</span> – Security & Account Protection
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Already have an Is7 Game account? Log in to access your games, check your balance, claim daily rewards, and pick up right where you left off. Multiple login methods are supported for your convenience.
+            Your Is7 Game account holds real balances and personal data — protecting it is not optional. This guide covers every security layer available to Is7 players: two-factor authentication, session management, login audit logs, biometric login setup, suspicious activity alerts, and how to quickly revoke access if something looks wrong.
           </p>
           <TrackedCTALink location="is7_game_login_cta" className="btn-cta text-lg px-10 py-4">
             Open Is7 Game & Login
@@ -51,39 +51,43 @@ export default function Is7GameLoginPage() {
         </div>
       </section>
 
-      {/* Login Methods */}
+      {/* 2FA Setup */}
       <section>
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Login Methods</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-10">Setting Up Two-Factor Authentication (2FA)</h2>
+          <div className="max-w-3xl mx-auto space-y-6">
+            <p className="text-gray-700">Two-factor authentication is the single most effective step you can take to protect your Is7 Game account. Even if someone obtains your password, they cannot log in without the second factor — the one-time code sent to your phone. Setting up 2FA takes less than two minutes.</p>
             {[
-              { title: "Phone Number + Password", desc: "The standard login method. Enter your registered phone number and password on the Is7 Game login screen. This works reliably on all devices and connections.", steps: ["Open Is7 Game app", "Tap 'Login'", "Enter phone number", "Enter password", "Tap 'Sign In'"] },
-              { title: "Biometric Login", desc: "For faster access, enable fingerprint or face recognition in your Is7 profile settings. After setup, a single touch or glance logs you in instantly — no need to type anything.", steps: ["Open Is7 Game app", "Tap the fingerprint icon", "Scan your fingerprint", "You're in!"] },
-              { title: "OTP Login", desc: "Forgot your password? Use the OTP login option. Is7 sends a one-time code to your registered phone number, which you enter to access your account without needing your password.", steps: ["Open Is7 Game app", "Tap 'Login with OTP'", "Enter phone number", "Enter the code sent via SMS", "Access granted"] },
-            ].map((method, i) => (
-              <div key={i} className="card p-4">
-                <h3 className="text-xl font-semibold mb-3 text-primary">{method.title}</h3>
-                <p className="text-gray-600 mb-4">{method.desc}</p>
-                <ol className="list-decimal list-inside text-sm text-gray-500 space-y-1">
-                  {method.steps.map((s, j) => <li key={j}>{s}</li>)}
-                </ol>
+              { step: "1", title: "Open Profile Settings", desc: "Log in to Is7 Game and navigate to your Profile icon in the top right corner. Tap 'Settings', then select the 'Security' section from the menu." },
+              { step: "2", title: "Enable Two-Factor Authentication", desc: "Toggle the '2FA' switch to ON. You will be prompted to confirm your current password before the change takes effect — this prevents someone else from enabling or disabling 2FA on your account." },
+              { step: "3", title: "Link Your Phone Number", desc: "Enter the phone number you want to receive 2FA codes on. This can be the same number used for registration, or a separate number you consider more secure. Verify it with an OTP." },
+              { step: "4", title: "Test the Setup", desc: "Log out of Is7 Game and log back in. After entering your password, you will now be prompted for a 6-digit code sent to your linked number. Enter it to confirm 2FA is working correctly." },
+              { step: "5", title: "Save Backup Codes", desc: "Is7 Game generates a set of one-time backup codes during 2FA setup. Save these in a secure offline location (printed paper or a password manager). They allow you to regain access if you ever lose your phone." },
+            ].map((s, i) => (
+              <div key={i} className="flex items-start gap-4">
+                <div className="step-number flex-shrink-0">{s.step}</div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">{s.title}</h3>
+                  <p className="text-gray-600">{s.desc}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Security Tips */}
+      {/* Session Management */}
       <section className="bg-surface">
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Keep Your Is7 Login Secure</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">Session Management & Revoking Access</h2>
           <div className="max-w-3xl mx-auto space-y-4">
+            <p className="text-gray-700 mb-6">Is7 Game lets you view and control every active session on your account. If you have ever logged in from a friend&apos;s phone, a new device, or a secondary tablet, all of those sessions remain active until you revoke them — even if you did not explicitly log out. Managing sessions closes these open doors to your account.</p>
             {[
-              { tip: "Use a Strong Password", detail: "Combine uppercase letters, lowercase letters, numbers, and special characters. Avoid using your name, birthdate, or common words. A 12+ character password is ideal." },
-              { tip: "Enable Two-Factor Authentication", detail: "Go to Profile → Security → 2FA and link your phone number. Every login will require both your password and a verification code sent to your phone." },
-              { tip: "Never Share Your Credentials", detail: "Is7 support will never ask for your password. Do not share login details with anyone, including friends or family members. Each person should have their own account." },
-              { tip: "Log Out on Shared Devices", detail: "If you log in on someone else's phone or a public device, always log out when you are done. Go to Profile → Settings → Log Out to end your session securely." },
-              { tip: "Monitor Login History", detail: "Check Profile → Security → Login History periodically. If you see logins from unfamiliar devices or locations, change your password immediately and contact support." },
+              { tip: "View Active Sessions", detail: "Go to Profile → Security → Active Sessions. You will see a list of every device currently logged into your account, including device model, operating system, approximate location, and the date and time of the last activity." },
+              { tip: "Identify Unfamiliar Devices", detail: "Scan the session list for any device you do not recognize. Pay attention to unusual locations or devices logged in at times when you were not playing. Even a session from a city you visited once should be reviewed and revoked." },
+              { tip: "Revoke Individual Sessions", detail: "Tap the 'Revoke' or 'Log Out' button next to any session you want to terminate. That device will be instantly signed out and will need to enter credentials again to regain access." },
+              { tip: "Revoke All Sessions at Once", detail: "If you suspect your account has been compromised, use the 'Log Out of All Devices' option at the bottom of the Active Sessions screen. This immediately terminates every session including your own current one, forcing a full re-authentication." },
+              { tip: "Set Session Timeout", detail: "In Security settings, you can configure an automatic session timeout ranging from 1 hour to 30 days. Shorter timeouts reduce risk on shared or lost devices at the cost of having to log in more frequently." },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-4 bg-primary-50 rounded-lg">
                 <span className="text-primary font-bold text-lg flex-shrink-0">🔒</span>
@@ -97,20 +101,35 @@ export default function Is7GameLoginPage() {
         </div>
       </section>
 
-      {/* Password Recovery */}
+      {/* Login Audit Log & Suspicious Activity */}
       <section className="bg-primary-50">
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Forgot Your Password?</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">Login Audit Log & Suspicious Activity Alerts</h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-gray-700 mb-6">If you cannot remember your Is7 Game password, follow these steps to reset it:</p>
-            <div className="space-y-4">
+            <p className="text-gray-700 mb-6">The Is7 Game login audit log is your account&apos;s security history. Every successful login, failed login attempt, password change, and 2FA event is recorded with a timestamp, device fingerprint, and IP-based location. You can access the full log at Profile → Security → Login History.</p>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
               {[
-                "Open the Is7 Game app and tap 'Login'",
-                "Tap 'Forgot Password?' below the password field",
-                "Enter your registered phone number or email address",
-                "Receive a 6-digit verification code via SMS or email",
-                "Enter the code and create a new strong password",
-                "Log in with your new password — your account and balance are intact",
+                { title: "What the Audit Log Shows", desc: "Each entry in your login history includes the date and time, the device type (Android phone, tablet, etc.), the approximate city and country, whether the login succeeded or was blocked, and whether 2FA was used." },
+                { title: "Suspicious Activity Alerts", desc: "Is7 Game automatically flags logins from new devices, new countries, or multiple failed attempts and sends an SMS alert to your registered number. You can review and dismiss alerts from the Security section." },
+                { title: "Failed Login Tracking", desc: "Repeated failed login attempts from the same IP address trigger a temporary account lock as a brute-force protection measure. You will receive an alert and can unlock your account via OTP verification." },
+                { title: "What to Do If You See Unknown Logins", desc: "If your audit log shows a login you do not recognize: immediately change your password, revoke all sessions, enable or re-verify 2FA, and contact Is7 support through the in-app chat to flag the incident." },
+              ].map((item, i) => (
+                <div key={i} className="card p-4">
+                  <h3 className="text-lg font-semibold mb-2 text-primary">{item.title}</h3>
+                  <p className="text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            <h2 className="text-2xl font-bold text-center mb-6">Biometric Login Setup</h2>
+            <p className="text-gray-700 mb-4">Biometric login — fingerprint or face recognition — combines speed with security. Once configured, you can unlock your Is7 Game account in under a second without typing a password. Biometrics are stored locally on your device and never transmitted to Is7 servers.</p>
+            <div className="space-y-3">
+              {[
+                "Go to Profile → Settings → Login Options",
+                "Tap 'Enable Biometric Login'",
+                "Authenticate once with your current password to confirm the change",
+                "Follow your device prompts to register your fingerprint or face",
+                "On next login, tap the biometric icon instead of typing your password",
+                "Note: 2FA is still required the first time you log in on a new device, even with biometrics enabled",
               ].map((step, i) => (
                 <div key={i} className="card-static flex items-center gap-4 p-4">
                   <div className="step-number flex-shrink-0">{i + 1}</div>

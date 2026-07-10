@@ -5,16 +5,16 @@ import TrackedCTALink from "@/components/TrackedCTALink";
 
 
 export const metadata: Metadata = {
-  title: "Is7 Game Signup – Create Your Account in Minutes",
-  description: "Sign up for Is7 Game with this step-by-step walkthrough. Learn about registration requirements, verification, welcome bonuses, and how to get started playing immediately.",
-  keywords: ["Is7 Game signup", "Is7 signup", "Is7 Game registration", "create Is7 account", "Is7 Game sign up 2026", "Is7 Game new account"],
+  title: "Is7 Game Signup – Referral Program, Invite Codes & Signup Rewards",
+  description: "Sign up for Is7 Game and unlock the referral program. Learn how invite codes work, signup bonus structure, social signup options, group invites, and long-term referral earnings.",
+  keywords: ["Is7 Game signup", "Is7 referral program", "Is7 invite code", "Is7 Game signup bonus", "Is7 Game referral earnings", "Is7 sign up rewards"],
   openGraph: {
-    title: "Is7 Game Signup – Create Your Account in Minutes",
-    description: "Complete Is7 Game signup guide. Create your account, verify, and start playing in minutes.",
+    title: "Is7 Game Signup – Referral Program, Invite Codes & Signup Rewards",
+    description: "Join Is7 Game and start earning through the referral program. Invite friends, track commissions, and grow your passive income from Day 1.",
     url: "https://Is7gamee.com/is7-game-signup",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Is7 Game Signup" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Is7 Game Signup Referral" }],
   },
-  twitter: { card: "summary_large_image", title: "Is7 Game Signup", description: "Sign up for Is7 Game — quick and easy registration walkthrough.", images: ["/og-image.png"] },
+  twitter: { card: "summary_large_image", title: "Is7 Game Signup & Referral Program", description: "Sign up for Is7 Game and earn through referrals from Day 1.", images: ["/og-image.png"] },
   alternates: { canonical: "https://Is7gamee.com/is7-game-signup" },
 };
 
@@ -40,10 +40,10 @@ export default function Is7GameSignupPage() {
             <span className="text-gray-800 font-medium">Is7 Game Signup</span>
           </nav>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Is7 Game Signup</span> – Your Account Awaits
+            <span className="gradient-text">Is7 Game Signup</span> – Referral Program & Rewards
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Creating an Is7 Game account is fast, free, and straightforward. In under two minutes, you will have a fully verified account ready to play, deposit, and earn rewards. This walkthrough covers every step of the Is7 Game signup process so you know exactly what to expect — no surprises, no hidden requirements.
+            Signing up for Is7 Game does more than open a gaming account — it gives you access to one of the most rewarding referral programs in online gaming. From the moment your registration is complete, you can start earning commissions by inviting friends, using and sharing invite codes, and building a referral network that generates ongoing passive income. Here is everything you need to know before you sign up.
           </p>
           <TrackedCTALink location="is7_game_signup_cta" className="btn-cta text-lg px-10 py-4">
             Sign Up for Is7 Game Now
@@ -51,20 +51,20 @@ export default function Is7GameSignupPage() {
         </div>
       </section>
 
-      {/* Signup Steps */}
+      {/* How the Referral Program Works */}
       <section>
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Is7 Game Signup Process: Step by Step</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">How the Is7 Game Referral Program Works</h2>
           <div className="max-w-3xl mx-auto">
             <div className="space-y-4">
               {[
-                { title: "Download the Is7 Game App", detail: "Visit the official Is7 Game website or use the download link on this page. The APK file is lightweight (under 30MB) and installs on any Android device running version 5.0 or later. You will need to enable 'Install from Unknown Sources' in your device settings if you have not already." },
-                { title: "Open the App and Tap Register", detail: "Launch Is7 Game after installation. On the welcome screen, you will see options for both Login and Register. Tap 'Register' to begin creating your new account. The registration form is clean and requires only essential information." },
-                { title: "Enter Your Phone Number", detail: "Type your active mobile phone number. This number will be used for account verification, login, and password recovery. Make sure it is a number you have permanent access to, as it becomes your primary account identifier on Is7 Game." },
-                { title: "Create a Strong Password", detail: "Choose a password that is at least eight characters long and includes a mix of uppercase letters, lowercase letters, numbers, and special characters. Avoid using your name, birthdate, or simple sequences. A strong password protects your balance and personal data." },
-                { title: "Enter a Referral Code (Optional)", detail: "If someone referred you to Is7 Game, enter their referral code in the designated field. Both you and the referrer will receive bonuses when you complete your first deposit. If you do not have a referral code, you can skip this step — you will still receive the standard welcome bonus." },
-                { title: "Verify via OTP", detail: "After submitting the registration form, Is7 Game sends a one-time password (OTP) to your phone number via SMS. Enter the six-digit code within 60 seconds to verify your account. If the code does not arrive, tap 'Resend OTP' after the countdown expires." },
-                { title: "Account Created — Start Playing", detail: "Once verified, your Is7 Game account is fully active. You are automatically logged in and taken to the home screen where you can explore game modes, make your first deposit, and claim your welcome bonus." },
+                { title: "Your Unique Referral Link Is Generated at Signup", detail: "The instant you complete Is7 Game registration, a unique referral link and a personalised invite code are created and assigned to your account. You will find both in Profile → Referrals. Your referral link encodes your account ID so every signup made through it is automatically attributed to you, permanently." },
+                { title: "Share Your Link Across Any Channel", detail: "There is no restriction on how or where you share your Is7 Game referral link. Successful Is7 ambassadors share their links via WhatsApp groups, Telegram channels, Facebook posts, TikTok videos, and even SMS. The more relevant the audience, the higher your conversion rate — gaming communities, sports betting groups, and entertainment pages tend to perform best." },
+                { title: "Enter an Invite Code at Signup for a Bonus Boost", detail: "If someone shared an Is7 Game invite code with you before you registered, enter it in the referral code field during signup. This does not replace the standard welcome bonus — it adds to it. Both you and the code owner receive a signup bonus that stacks on top of the first-deposit welcome bonus. If you do not have a code, you can skip the field." },
+                { title: "Your Referrals Trigger Commission Immediately", detail: "As soon as a friend you referred makes their first deposit on Is7 Game, your commission is triggered. Is7 Game pays referral commissions as a percentage of the net activity generated by your referred players. This means you earn passively every time they play, not just on a one-time signup bonus." },
+                { title: "Track Everything in the Referral Dashboard", detail: "Your referral tracking dashboard is accessible at Profile → Referrals → Dashboard. It shows the total number of players you have referred, which ones are active, your total commission earned to date, pending commissions awaiting clearing, and a breakdown of your top-performing referrals by activity volume." },
+                { title: "Multi-Tier Referral Earnings", detail: "Is7 Game operates a multi-tier referral system. When a player you referred also starts referring their own friends, you earn a secondary-tier commission on the activity those players generate. This means a single engaged referral who goes on to build their own network can produce significant long-term earnings for your account." },
+                { title: "Group Signup for Friends", detail: "Planning to sign up with a group of friends simultaneously? Is7 Game recommends that one person registers first, obtains their referral link, and then shares it with the group before anyone else signs up. This way, everyone in the group registers under the same referral, and the original player earns commissions across the entire group from Day 1." },
               ].map((step, i) => (
                 <div key={i} className="card-static flex items-center gap-4 p-4">
                   <div className="step-number flex-shrink-0">{i + 1}</div>
@@ -79,15 +79,15 @@ export default function Is7GameSignupPage() {
         </div>
       </section>
 
-      {/* What You Get After Signup */}
+      {/* Signup Bonus Structure & Social Options */}
       <section className="bg-surface">
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">What You Get After Signing Up</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">Signup Bonus Structure & Social Signup Options</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "Welcome Bonus", desc: "Every new Is7 Game account receives a welcome bonus upon first deposit. This bonus effectively doubles your initial balance, giving you extra room to explore games and develop your strategy without risking too much of your own money." },
-              { title: "Your Referral Link", desc: "Immediately after signup, you receive a unique referral link in your profile. Share this link with friends, family, or on social media. When someone signs up through your link and makes a deposit, you earn a commission on their activity — and this extends across multiple referral tiers." },
-              { title: "Full Platform Access", desc: "From the moment your account is verified, you have access to every feature Is7 Game offers: all game modes, the wallet system for deposits and withdrawals, daily bonus claims, tournament entries, and the VIP rewards program. There are no locked features or premium tiers required to start." },
+              { title: "Standard Signup Bonus", desc: "Every new Is7 Game account receives a welcome bonus on first deposit. The bonus percentage is tiered: higher first deposits unlock a higher match percentage. This bonus is separate from referral bonuses and is available regardless of whether you used an invite code." },
+              { title: "Referral Code Bonus Stack", desc: "When you sign up using a valid Is7 Game invite code, your welcome bonus is enhanced. The exact enhancement varies by promotional period, but it consistently adds 10-25% on top of the standard first-deposit bonus. Both you and the code-sharing player benefit from the transaction." },
+              { title: "Social Media Signup Bonus", desc: "Is7 Game occasionally runs campaigns where players who sign up via a tracked social media link — from an official Is7 Telegram post, Facebook promotion, or influencer campaign — receive an additional bonus on top of the standard welcome package. Check the Is7 Game Telegram channel for active campaigns before you register." },
             ].map((item, i) => (
               <div key={i} className="card p-4">
                 <h3 className="text-xl font-semibold mb-3 text-primary">{item.title}</h3>
@@ -98,17 +98,17 @@ export default function Is7GameSignupPage() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* Long-Term Referral Earnings FAQ */}
       <section className="bg-primary-50">
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Signup FAQ</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">Referral Earnings: Long-Term FAQ</h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {[
-              { q: "Is Is7 Game signup free?", a: "Yes, creating an Is7 Game account is completely free. You only spend money when you choose to make a deposit to play games. Registration itself has no cost." },
-              { q: "Can I sign up with an email instead of a phone number?", a: "Currently, Is7 Game requires a phone number for registration and verification. This provides stronger security than email-based accounts and enables instant OTP verification." },
-              { q: "What if I do not receive the OTP?", a: "Wait for the 60-second countdown to expire, then tap 'Resend OTP.' Ensure your phone has network coverage and that your SMS inbox is not full. If the issue persists, contact Is7 Game support through the in-app chat." },
-              { q: "Can I create multiple accounts?", a: "Each phone number can only be associated with one Is7 Game account. Creating multiple accounts violates the platform's terms of service and may result in all accounts being suspended." },
-              { q: "Is my personal information safe?", a: "Is7 Game uses AES-256 encryption for all data transmissions and stores personal information on secure servers. Your phone number and account details are never shared with third parties." },
+              { q: "How long do referral commissions last?", a: "Is7 Game referral commissions are lifetime commissions. As long as the player you referred remains active on the platform, you continue earning a percentage of their net activity. There is no expiry date on referral relationships." },
+              { q: "When are referral commissions paid out?", a: "Commissions are calculated daily and credited to your Is7 Game referral wallet. You can transfer your referral balance to your main wallet at any time and withdraw it according to the standard withdrawal process." },
+              { q: "Is there a minimum number of referrals to earn?", a: "No minimum is required. Even a single active referral generates commission for you. However, Is7 Game runs referral leaderboards with enhanced rewards for players who refer 10 or more active accounts per month." },
+              { q: "What counts as an active referral?", a: "A referred player is considered active in any month where they place at least one real-money wager. Dormant accounts (no activity for 90+ days) are paused from generating commission until they return to activity." },
+              { q: "Can I see which of my referrals are generating the most commission?", a: "Yes. The referral dashboard ranks your referred players by commission generated over the past 30 days and all-time. Identities are anonymised for privacy, but you can see activity tiers and earnings per referral slot." },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3 p-4 bg-primary-100 rounded-lg">
                 <span className="text-primary font-bold text-lg flex-shrink-0">Q</span>

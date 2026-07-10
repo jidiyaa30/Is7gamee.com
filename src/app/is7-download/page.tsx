@@ -5,16 +5,16 @@ import TrackedCTALink from "@/components/TrackedCTALink";
 
 
 export const metadata: Metadata = {
-  title: "Is7 Download – Fastest Way to Get Is7 on Your Phone",
-  description: "Is7 download page with speed optimization tips, mirror availability, and post-install configuration. Get Is7 running on your Android device in record time.",
+  title: "Is7 Download – Network & Speed Optimization Guide",
+  description: "Download Is7 on any connection speed. Learn how Is7's CDN works, WiFi vs mobile data tips, download resume support, and bandwidth tricks to get Is7 faster regardless of your region.",
   keywords: ["Is7 download", "Is7 download link", "Is7 download free", "Is7 download Android", "Is7 download fast"],
   openGraph: {
-    title: "Is7 Download – Fastest Way to Get Is7 on Your Phone",
-    description: "Speed-optimized Is7 download with tips and post-install configuration.",
+    title: "Is7 Download – Network & Speed Optimization Guide",
+    description: "Download Is7 on slow or fast connections. CDN tips, WiFi vs mobile data, resume support, and regional speed tricks.",
     url: "https://Is7gamee.com/is7-download",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Is7 Download" }],
   },
-  twitter: { card: "summary_large_image", title: "Is7 Download – Fast & Free", description: "Get Is7 on your phone in under 2 minutes.", images: ["/og-image.png"] },
+  twitter: { card: "summary_large_image", title: "Is7 Download – Speed Optimized for Any Network", description: "Get Is7 fast on any connection — WiFi, 4G, or slow mobile data.", images: ["/og-image.png"] },
   alternates: { canonical: "https://Is7gamee.com/is7-download" },
 };
 
@@ -40,10 +40,10 @@ export default function Is7DownloadPage() {
             <span className="text-gray-800 font-medium">Is7 Download</span>
           </nav>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Is7 Download</span> – Quick & Reliable
+            <span className="gradient-text">Is7 Download</span> – Optimized for Every Network
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Get Is7 downloaded and running on your Android device as fast as possible. This guide focuses on speed — the optimal download settings, the fastest server links, and quick-start configuration tips.
+            Whether you are on blazing 5G, a congested 3G network, or a slow rural WiFi connection, this guide explains exactly how to get Is7 downloaded as quickly and reliably as possible. We cover how the Is7 CDN routes your request, when to use WiFi vs mobile data, and how to resume interrupted downloads so you never have to start over.
           </p>
           <TrackedCTALink location="is7_download_cta" className="btn-cta text-lg px-10 py-4">
             Download Is7 Now
@@ -51,16 +51,63 @@ export default function Is7DownloadPage() {
         </div>
       </section>
 
-      {/* Speed Tips */}
+      {/* How the CDN Works */}
       <section>
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Download Speed Optimization</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">How the Is7 Download CDN Works</h2>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-gray-700 mb-6">
+              Is7 distributes its APK through a Content Delivery Network (CDN) with edge nodes spread across Southeast Asia, South Asia, the Middle East, and Africa. When you tap the download button, the CDN automatically detects your IP address and routes the request to the nearest available server. This means a player in Manila gets their file from a Philippine edge node, while a player in Dhaka connects to a South Asian server — both receiving the same file, but from a location with far lower latency.
+            </p>
+            <p className="text-gray-700 mb-6">
+              The CDN also performs load balancing in real time. If a regional server is experiencing high traffic — for example, during a major tournament announcement — requests are automatically shifted to the next closest node. You may notice slightly different download speeds depending on the time of day, but the CDN prevents any single server from becoming a bottleneck.
+            </p>
+            <p className="text-gray-700">
+              All CDN transfers use HTTPS with TLS 1.3, ensuring the file you receive is identical to what the Is7 team published. No modifications, no injections, and no man-in-the-middle interference are possible on a properly secured CDN link.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WiFi vs Mobile Data */}
+      <section className="bg-surface">
+        <div className="container section-padding mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">WiFi vs Mobile Data: Which Is Better for Downloading Is7?</h2>
+          <div className="max-w-3xl mx-auto">
+            <table className="info-table w-full mb-6">
+              <thead>
+                <tr className="bg-primary-50">
+                  <th className="text-left font-semibold p-3">Factor</th>
+                  <th className="text-left font-semibold p-3">WiFi (2.4 GHz)</th>
+                  <th className="text-left font-semibold p-3">WiFi (5 GHz)</th>
+                  <th className="text-left font-semibold p-3">4G / 5G Mobile</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Typical Speed</td><td>10–50 Mbps</td><td>50–300 Mbps</td><td>15–100 Mbps</td></tr>
+                <tr><td>Interference Risk</td><td>High</td><td>Low</td><td>Low</td></tr>
+                <tr><td>Range</td><td>Wide</td><td>Shorter</td><td>Wide</td></tr>
+                <tr><td>Data Cost</td><td>Free (home plan)</td><td>Free (home plan)</td><td>Counts toward data cap</td></tr>
+                <tr><td>Best For</td><td>Large downloads</td><td>Fastest downloads</td><td>Downloading on the go</td></tr>
+              </tbody>
+            </table>
+            <p className="text-gray-700">
+              For most users, a 5 GHz WiFi connection delivers the fastest download. The 5 GHz band has less interference from neighboring networks and household appliances. However, if you are more than 5 meters from your router, the 2.4 GHz band actually provides better throughput due to its superior range. Mobile 4G and 5G are perfectly capable of downloading the Is7 APK quickly — the 71 MB file takes about 6 seconds on an average 4G connection at 90 Mbps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Download Resume & Bandwidth Tips */}
+      <section className="bg-primary-50">
+        <div className="container section-padding mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">Download Resume Support & Bandwidth Tips</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {[
-              { title: "Use 5 GHz Wi-Fi", desc: "If your router supports dual-band Wi-Fi, connect to the 5 GHz network for significantly faster download speeds. The 2.4 GHz band is more prone to interference from other devices and appliances." },
-              { title: "Close Background Apps", desc: "Other apps consuming bandwidth (streaming, cloud sync, social media) can slow your Is7 download. Close unnecessary apps or enable airplane mode with Wi-Fi only for the fastest possible transfer." },
-              { title: "Try a Different Browser", desc: "If your default browser is slow, try Firefox or Opera. These browsers have built-in download managers that can resume interrupted downloads and may offer faster throughput." },
-              { title: "Download During Off-Peak Hours", desc: "Server load varies throughout the day. Downloading during early morning or late night hours in your timezone typically results in the fastest speeds from the Is7 content delivery network." },
+              { title: "Resumable Downloads", desc: "The Is7 CDN supports HTTP range requests, which means browsers with built-in download managers (Firefox, Opera, Brave) can resume an interrupted download from where it stopped. If your connection drops mid-download, do not delete the partial file — your browser will pick up from the last byte received once you reconnect." },
+              { title: "Clear Browser Cache First", desc: "A bloated browser cache can slow down file writes to your storage, making downloads appear slower than your connection allows. Before downloading Is7, go to your browser settings and clear the cache. This is especially helpful on older Android devices with slower internal storage." },
+              { title: "Pause Cloud Syncs", desc: "Google Photos, Google Drive, and other cloud sync services continuously upload data in the background, consuming upload bandwidth. While uploads and downloads use separate channels, on congested mobile connections they compete for the same radio resources. Temporarily pausing auto-sync can noticeably improve Is7 download speeds." },
+              { title: "Download During Off-Peak Hours", desc: "Mobile network congestion peaks during evening hours (7 PM – 11 PM local time) when millions of users stream video simultaneously. If you are on a shared mobile plan or slow rural internet, downloading Is7 between midnight and 6 AM will typically yield 20–40% faster speeds from the same connection." },
             ].map((tip, i) => (
               <div key={i} className="card p-4">
                 <h3 className="text-lg font-semibold mb-2 text-primary">{tip.title}</h3>
@@ -71,49 +118,31 @@ export default function Is7DownloadPage() {
         </div>
       </section>
 
-      {/* Quick Start Config */}
-      <section className="bg-surface">
+      {/* Download Speed by Region */}
+      <section>
         <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Post-Download Quick Configuration</h2>
+          <h2 className="text-3xl font-bold text-center mb-10">Expected Download Times by Region</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-700 mb-6">
-              After installing Is7, these configuration tweaks will give you the best experience from day one:
+              Because Is7 uses regional CDN edge nodes, download times vary by location. The table below shows estimated download times for the 71 MB APK based on average mobile internet speeds in each market. These are typical speeds — actual performance depends on your specific carrier and network conditions at the time of download.
             </p>
             <table className="info-table w-full">
               <thead>
                 <tr className="bg-primary-50">
-                  <th className="text-left font-semibold p-3">Setting</th>
-                  <th className="text-left font-semibold p-3">Recommended Value</th>
-                  <th className="text-left font-semibold p-3">Why</th>
+                  <th className="text-left font-semibold p-3">Region</th>
+                  <th className="text-left font-semibold p-3">Avg Mobile Speed</th>
+                  <th className="text-left font-semibold p-3">Est. Download Time</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Graphics Quality</td><td>Auto</td><td>Lets Is7 detect your hardware and set optimal rendering</td></tr>
-                <tr><td>Notifications</td><td>Enabled</td><td>Never miss bonus drops, tournament alerts, or updates</td></tr>
-                <tr><td>Biometric Login</td><td>Enabled</td><td>Faster login and added security layer</td></tr>
-                <tr><td>Language</td><td>Your preference</td><td>Is7 supports English, Hindi, Filipino, Thai, Vietnamese</td></tr>
-                <tr><td>Sound Effects</td><td>On</td><td>Enhanced gaming immersion (adjustable per-game)</td></tr>
+                <tr><td>Philippines</td><td>35 Mbps</td><td>~16 seconds</td></tr>
+                <tr><td>Thailand</td><td>55 Mbps</td><td>~10 seconds</td></tr>
+                <tr><td>Bangladesh</td><td>18 Mbps</td><td>~32 seconds</td></tr>
+                <tr><td>Vietnam</td><td>42 Mbps</td><td>~14 seconds</td></tr>
+                <tr><td>Indonesia</td><td>22 Mbps</td><td>~26 seconds</td></tr>
+                <tr><td>India</td><td>25 Mbps</td><td>~23 seconds</td></tr>
               </tbody>
             </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Download Is7 */}
-      <section className="bg-primary-50">
-        <div className="container section-padding mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Why Download Is7?</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "500+ Games", desc: "One download unlocks an entire gaming universe — slots, live casino, sports, arcade, cards, and lottery games." },
-              { title: "Daily Rewards", desc: "Log in every day to collect free bonuses, spins, and credits. Streak bonuses amplify your rewards over time." },
-              { title: "Secure Platform", desc: "256-bit SSL encryption, certified RNGs, and 24/7 monitoring ensure a safe and fair gaming environment." },
-            ].map((item, i) => (
-              <div key={i} className="card-static text-center p-4">
-                <h3 className="text-lg font-semibold mb-2 text-primary">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
-            ))}
           </div>
           <div className="text-center mt-10">
             <TrackedCTALink location="is7_download_cta" className="btn-primary px-8 py-3">
