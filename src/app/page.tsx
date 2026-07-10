@@ -43,6 +43,21 @@ const reviewJsonLd = {
   ],
 };
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Download and Install Is7 Game APK on Android",
+  description: "Follow these simple steps to download and install Is7 Game APK on your Android device for free.",
+  totalTime: "PT2M",
+  step: [
+    { "@type": "HowToStep", position: 1, name: "Download the APK", text: "Tap the download button on Is7gamee.com to get the latest Is7 Game APK file (71 MB)." },
+    { "@type": "HowToStep", position: 2, name: "Allow Unknown Sources", text: "Go to Settings > Security > Enable 'Install from Unknown Sources' for your browser." },
+    { "@type": "HowToStep", position: 3, name: "Install the APK", text: "Open the downloaded Is7 Game APK file and tap Install. Android will verify the package automatically." },
+    { "@type": "HowToStep", position: 4, name: "Create Your Account", text: "Launch Is7 Game, tap Register, enter your mobile number or email, and verify via OTP." },
+    { "@type": "HowToStep", position: 5, name: "Claim Bonus & Play", text: "Claim your ₹500 welcome bonus and start exploring 500+ premium games instantly." },
+  ],
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -62,6 +77,7 @@ const faqJsonLd = {
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }} />
       <HomePage />
